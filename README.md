@@ -6,21 +6,25 @@ This script creates a WordPress site using the latest WordPress version and a My
 
 Before running the script, make sure that Docker and Docker Compose are installed on your system. If they are not present, the script will attempt to install them automatically.
 To run the script, simply execute the following command in your terminal:
+
 ./wp.sh example.com
 
 **Enabling the Site**
 
 You can Enable the site by running the script with the Enabling subcommand:
+
 ./wp.sh == enable
 
 **Disabling the Site**
 
 You can disable the site by running the script with the disable subcommand:
+
 ./wp.sh == disable 
 
 **Deleting the Site**
 
 You can delete the site by running the script with the delete subcommand:
+
 ./wp.sh == delete 
 
 **Opening the Site**
@@ -31,5 +35,6 @@ WordPress site created successfully. Please open http://example.com in your brow
 **/etc/hosts Entry**
 
 The script will automatically create a /etc/hosts entry for your site pointing to localhost. If you provided example.com as your site name, this entry will look like:
+
 127.0.0.1 example.com
 
